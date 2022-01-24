@@ -9,7 +9,7 @@ function Demo1() {
           .attr('width', 600)
           .style('background', 'lightgrey');
     
-          d3.tsv("examples-simple.tsv") // 讀取資料
+          d3.tsv("data/examples-simple.tsv") // 讀取資料
             .then( function(data) {
             d3.select("svg") // 傳回第一個匹配的點
               .selectAll("circle") // 傳回所有匹配的點，在此時因為沒有找不到任何一個，所以將會建立一個空的 collection
