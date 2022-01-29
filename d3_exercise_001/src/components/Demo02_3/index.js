@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 import { useEffect } from 'react';
 
 
-function makeDemo3() {
+function makeDemo02_3() {
     d3.tsv("data/examples-multiple.tsv")
         .then( function(data) {
             var svg = d3.select( "svg" );
@@ -61,22 +61,22 @@ function makeDemo3() {
     )
 }
 
-function Demo3() {
+function Demo02_3() {
     
 
     useEffect(()=>{
-        d3.select('.Demo3')
+        d3.select('.Demo02_3')
           .append('svg')
           .attr('height', 300)
           .attr('width', 600)
           .style('background', 'lightgrey');
     
-          makeDemo3()
+          makeDemo02_3()
       })
 
     return (
-        (<div className="Demo3"></div>)
+        (<div className="Demo02_3"></div>)
     );
 }
 
-export default Demo3;
+export default Demo02_3;

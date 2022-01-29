@@ -1,10 +1,10 @@
 import * as d3 from 'd3'
 import { useEffect } from 'react';
 
-function Demo4() {
+function Demo02_4() {
     useEffect(()=>{
         var vs = ["From East", "to West", "at Home", "is Best"]
-        d3.select('.Demo4')
+        d3.select('.Demo02_4')
           .append('ul').selectAll("li")
           .data(vs).enter()
           .append("li").text(d=>d)
@@ -17,8 +17,8 @@ function Demo4() {
     })
 
     return (
-        (<div className="Demo4"></div>)
+        (<div className="Demo02_4"></div>)
     );
 }
 
-export default Demo4;
+export default Demo02_4;

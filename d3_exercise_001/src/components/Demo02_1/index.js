@@ -1,9 +1,9 @@
 import * as d3 from 'd3'
 import { useEffect } from 'react';
 
-function Demo1() {
+function Demo02_1() {
     useEffect(()=>{
-        d3.select('.Demo1')
+        d3.select('.Demo02_1')
           .append('svg')
           .attr('height', 300)
           .attr('width', 600)
@@ -24,8 +24,8 @@ function Demo1() {
       })
 
     return (
-        (<div className="Demo1"></div>)
+        (<div className="Demo02_1"></div>)
     );
 }
 
-export default Demo1;
+export default Demo02_1;
