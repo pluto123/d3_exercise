@@ -1,9 +1,9 @@
-import Demo04_1 from './components/Demo04_1';
+import Demo04_2 from './components/Demo04_2';
 
 function App() {
   return (
     <div className="App">
-      <Demo04_1 />
+      <Demo04_2 />
     </div>
   );
 }
