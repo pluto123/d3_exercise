@@ -1,4 +1,4 @@
-import Demo from './components/Demo05_1';
+import Demo from './components/Demo05_2';
 
 function App() {
   return (
