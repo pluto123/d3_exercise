@@ -2,8 +2,10 @@ import * as d3 from 'd3'
 import { useEffect } from 'react';
 
 function makeDemo04_7() {
-    d3.select("#t1").transition().duration(2000).attr( "fill-opacity", 0);
-    d3.select("#t2").transition().duration(2000).attr( "fill-opacity", 1);
+    d3.select( "svg" ).on( "click", function() {
+        d3.select("#t1").transition().duration(2000).attr( "fill-opacity", 0);
+        d3.select("#t2").transition().duration(2000).attr( "fill-opacity", 1);
+    })
 }
 
 function Demo04_7() {
