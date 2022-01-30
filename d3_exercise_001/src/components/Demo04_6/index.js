@@ -1,7 +1,7 @@
 import * as d3 from 'd3'
 import { useEffect } from 'react';
 
-function makeDemo04_5() {
+function makeDemo04_6() {
     var ds1 = [ 2, 1, 3, 5, 7, 8, 9, 9, 9, 8, 7, 5, 3, 1, 2 ];
     var ds2 = [ 8, 9, 8, 7, 5, 3, 2, 1, 2, 3, 5, 7, 8, 9, 8 ];
     var n = ds1.length, mx = d3.max( d3.merge( [ds1, ds2] ) );
@@ -25,19 +25,19 @@ function makeDemo04_5() {
     } );
 }
 
-function Demo04_5() {
+function Demo04_6() {
     useEffect(()=>{
-        d3.select('.Demo04_5')
+        d3.select('.Demo04_6')
             .append('svg')
             .attr('height', 300)
             .attr('width', 600)
             .style('background', 'lightgrey');
-          makeDemo04_5()
+          makeDemo04_6()
       })
 
     return (
-        (<div className="Demo04_5"></div>)
+        (<div className="Demo04_6"></div>)
     );
 }
 
-export default Demo04_5;
+export default Demo04_6;

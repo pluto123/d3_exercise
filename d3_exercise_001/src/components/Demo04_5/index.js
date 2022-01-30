@@ -1,7 +1,7 @@
 import * as d3 from 'd3'
 import { useEffect } from 'react';
 
-function makeDemo04_4() {
+function makeDemo04_5() {
     var widget = undefined, color = undefined;
 
     d3.select( "svg" ).selectAll( "circle" )
@@ -20,11 +20,11 @@ function makeDemo04_4() {
         } ));
 }
 
-function Demo04_4() {
+function Demo04_5() {
     useEffect(()=>{
         var ds1 = [[100, 100, "red"], [300, 100, "green"], [500, 100, "blue"]];
 
-        d3.select('.Demo04_4')
+        d3.select('.Demo04_5')
             .append('svg')
             .attr('height', 200)
             .attr('width', 600)
@@ -36,12 +36,12 @@ function Demo04_4() {
             .attr( "cx", d=>d[0])
             .attr( "cy", d=>d[1])
             .attr( "r", 20);
-          makeDemo04_4()
+          makeDemo04_5()
       })
 
     return (
-        (<div className="Demo04_4"></div>)
+        (<div className="Demo04_5"></div>)
     );
 }
 
-export default Demo04_4;
+export default Demo04_5;
