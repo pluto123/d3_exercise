@@ -30,11 +30,11 @@ function makeDemo07_4() {
             .attr( "y2", d => scY(d.dst.val) )
             .attr( "stroke", d=>scC( (d.src.val + d.dst.val)/2 ) );
 
-        svg.append( "g" ).attr( "transform", "translate(50,0)" )  //<7>
+        svg.append( "g" ).attr( "transform", "translate(50,0)" )
             .call( d3.axisLeft(scY) );
         svg.append( "g" ).attr( "transform", "translate(0,250)" )        
             .call( d3.axisBottom(scT).tickFormat( format )
-                   .ticks( d3.utcMinute.every(10) ) );
+                   .ticks( d3.utcMinute.every(10) ) );  // 以每 10 分鐘為一個刻度
 
         // 製作滑動鼠標而顯示曲線數值
         var txt = svg.append("text").attr("x",100).attr("y",50)   // 定義數值顯示位置
